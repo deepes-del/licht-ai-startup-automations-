@@ -49,17 +49,17 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-primary/10 via-background to-accent/10 relative overflow-hidden">
+    <section id="contact" className="py-20 bg-gradient-to-br from-primary/10 via-background to-accent/10 relative overflow-hidden transition-colors duration-300">
       {/* Background Effects */}
-      <div className="absolute top-20 left-10 w-32 h-32 bg-primary/10 rounded-full blur-xl animate-float"></div>
-      <div className="absolute bottom-20 right-10 w-24 h-24 bg-accent/10 rounded-full blur-xl animate-float" style={{animationDelay: '2s'}}></div>
+      <div className="absolute top-20 left-10 w-32 h-32 bg-primary/10 rounded-full blur-xl animate-float transition-colors duration-300"></div>
+      <div className="absolute bottom-20 right-10 w-24 h-24 bg-accent/10 rounded-full blur-xl animate-float transition-colors duration-300" style={{animationDelay: '2s'}}></div>
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-4 text-foreground">
+          <h2 className="text-4xl lg:text-5xl font-bold mb-4 text-foreground transition-colors duration-300">
             Let's <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Connect</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto transition-colors duration-300">
             Ready to transform your business with AI automation? Get in touch and let's discuss your specific needs.
           </p>
         </div>
@@ -68,7 +68,7 @@ const Contact = () => {
           {/* Contact Form */}
           <Card className="bg-card/80 backdrop-blur-md border-border/20 shadow-xl hover:shadow-2xl transition-all duration-300 animate-slide-in-left">
             <CardHeader>
-              <CardTitle className="text-2xl font-bold text-foreground">Send us a Message</CardTitle>
+              <CardTitle className="text-2xl font-bold text-foreground transition-colors duration-300">Send us a Message</CardTitle>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -80,7 +80,7 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleInputChange}
                     required
-                    className="bg-background/50 border-border/50 focus:border-primary transition-colors"
+                    className="bg-background/50 border-border/50 focus:border-primary transition-all duration-300"
                   />
                 </div>
                 <div>
@@ -91,7 +91,7 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleInputChange}
                     required
-                    className="bg-background/50 border-border/50 focus:border-primary transition-colors"
+                    className="bg-background/50 border-border/50 focus:border-primary transition-all duration-300"
                   />
                 </div>
                 <div>
@@ -102,7 +102,7 @@ const Contact = () => {
                     onChange={handleInputChange}
                     required
                     rows={5}
-                    className="bg-background/50 border-border/50 focus:border-primary resize-none transition-colors"
+                    className="bg-background/50 border-border/50 focus:border-primary resize-none transition-all duration-300"
                   />
                 </div>
                 <Button
@@ -111,7 +111,7 @@ const Contact = () => {
                   className="w-full bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-primary-foreground font-semibold py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group"
                 >
                   {isSubmitting ? 'Sending...' : 'Send Message'}
-                  <Send className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                  <Send className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
                 </Button>
               </form>
             </CardContent>
@@ -120,8 +120,8 @@ const Contact = () => {
           {/* Contact Information */}
           <div className="space-y-8 animate-fade-in" style={{animationDelay: '0.2s'}}>
             <div>
-              <h3 className="text-3xl font-bold mb-6 text-foreground">Get in Touch</h3>
-              <p className="text-muted-foreground leading-relaxed mb-8">
+              <h3 className="text-3xl font-bold mb-6 text-foreground transition-colors duration-300">Get in Touch</h3>
+              <p className="text-muted-foreground leading-relaxed mb-8 transition-colors duration-300">
                 I'm here to help you leverage the power of AI automation. Whether you need a custom solution or want to learn more about our services, don't hesitate to reach out.
               </p>
             </div>
@@ -131,12 +131,12 @@ const Contact = () => {
               <Card className="bg-card/60 backdrop-blur-md border-border/20 hover:bg-card/80 transition-all duration-300 hover:animate-card-hover">
                 <CardContent className="p-6">
                   <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-gradient-to-r from-primary to-accent rounded-xl flex items-center justify-center">
+                    <div className="w-12 h-12 bg-gradient-to-r from-primary to-accent rounded-xl flex items-center justify-center transition-all duration-300">
                       <Mail className="h-6 w-6 text-primary-foreground" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-foreground">Email Me</h4>
-                      <p className="text-muted-foreground">kiranashgowda007@gmail.com</p>
+                      <h4 className="font-semibold text-foreground transition-colors duration-300">Email Me</h4>
+                      <p className="text-muted-foreground transition-colors duration-300">kiranashgowda007@gmail.com</p>
                     </div>
                   </div>
                 </CardContent>
@@ -145,35 +145,44 @@ const Contact = () => {
               <Card className="bg-card/60 backdrop-blur-md border-border/20 hover:bg-card/80 transition-all duration-300 hover:animate-card-hover">
                 <CardContent className="p-6">
                   <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-gradient-to-r from-accent to-primary rounded-xl flex items-center justify-center">
+                    <div className="w-12 h-12 bg-gradient-to-r from-accent to-primary rounded-xl flex items-center justify-center transition-all duration-300">
                       <User className="h-6 w-6 text-primary-foreground" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-foreground">Creator</h4>
-                      <p className="text-muted-foreground">🐐 Goat Creator – Kiran Gowda</p>
+                      <h4 className="font-semibold text-foreground transition-colors duration-300">Creator</h4>
+                      <p className="text-muted-foreground transition-colors duration-300">🐐 Goat Creator – Kiran Gowda</p>
                     </div>
                   </div>
                 </CardContent>
               </Card>
             </div>
 
-            {/* LinkedIn Button */}
-            <div className="pt-6">
+            {/* LinkedIn Buttons */}
+            <div className="pt-6 space-y-4">
               <Button
                 variant="outline"
-                className="bg-transparent border-2 border-primary/30 text-foreground hover:bg-primary hover:text-primary-foreground px-8 py-3 rounded-xl font-semibold transition-all duration-300 group"
+                className="w-full bg-transparent border-2 border-primary/30 text-foreground hover:bg-primary hover:text-primary-foreground px-8 py-3 rounded-xl font-semibold transition-all duration-300 group"
                 onClick={() => window.open('https://linkedin.com', '_blank')}
               >
-                <Linkedin className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
-                Connect on LinkedIn
+                <Linkedin className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
+                Kiran - Connect on LinkedIn
+              </Button>
+              
+              <Button
+                variant="outline"
+                className="w-full bg-transparent border-2 border-accent/30 text-foreground hover:bg-accent hover:text-primary-foreground px-8 py-3 rounded-xl font-semibold transition-all duration-300 group"
+                onClick={() => window.open('https://www.linkedin.com/in/deepesh-h-916a272b0', '_blank')}
+              >
+                <Linkedin className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
+                Deepesh - Connect on LinkedIn
               </Button>
             </div>
           </div>
         </div>
 
         {/* Footer */}
-        <div className="mt-20 pt-8 border-t border-border/30">
-          <div className="bg-gradient-to-r from-slate-900 to-slate-800 rounded-2xl p-8 backdrop-blur-sm text-center">
+        <div className="mt-20 pt-8 border-t border-border/30 transition-colors duration-300">
+          <div className="bg-gradient-to-r from-slate-900 to-slate-800 dark:from-slate-800 dark:to-slate-700 rounded-2xl p-8 backdrop-blur-sm text-center transition-all duration-300">
             <h4 className="text-2xl font-bold mb-4 text-white">
               Licht AI
             </h4>

@@ -24,7 +24,7 @@ const Header = () => {
   };
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+    <header className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 ${
       isScrolled ? 'bg-background/95 backdrop-blur-md shadow-lg border-b border-border/50' : 'bg-transparent'
     }`}>
       <div className="container mx-auto px-4 py-4">
@@ -34,9 +34,9 @@ const Header = () => {
             <img 
               src="/lovable-uploads/e5c4ceca-75b5-44af-bfc5-c1053552ed08.png" 
               alt="Licht AI Logo" 
-              className="w-10 h-10 object-contain"
+              className="w-10 h-10 object-contain transition-transform duration-300 hover:scale-110"
             />
-            <span className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+            <span className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent transition-all duration-300">
               Licht AI
             </span>
           </div>
@@ -63,26 +63,30 @@ const Header = () => {
           <Button
             variant="ghost"
             size="sm"
-            className="md:hidden"
+            className="md:hidden transition-all duration-300 hover:bg-card/50"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
-            {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
+            {isMobileMenuOpen ? (
+              <X size={20} className="transition-transform duration-300 rotate-90" />
+            ) : (
+              <Menu size={20} className="transition-transform duration-300" />
+            )}
           </Button>
         </nav>
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden mt-4 py-4 bg-background/95 backdrop-blur-md rounded-lg shadow-lg border border-border/50">
+          <div className="md:hidden mt-4 py-4 bg-background/95 backdrop-blur-md rounded-lg shadow-lg border border-border/50 animate-slide-in-left transition-all duration-300">
             <div className="flex flex-col space-y-4 px-4">
               <button
                 onClick={() => scrollToSection('home')}
-                className="text-left text-foreground/80 hover:text-foreground transition-colors"
+                className="text-left text-foreground/80 hover:text-foreground transition-colors duration-300 hover:translate-x-2 transform"
               >
                 Home
               </button>
               <button
                 onClick={() => scrollToSection('contact')}
-                className="text-left text-foreground/80 hover:text-foreground transition-colors"
+                className="text-left text-foreground/80 hover:text-foreground transition-colors duration-300 hover:translate-x-2 transform"
               >
                 Contact
               </button>
