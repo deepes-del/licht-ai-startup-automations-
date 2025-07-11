@@ -58,13 +58,6 @@ const Header = () => {
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-accent transition-all duration-300 group-hover:w-full"></span>
             </button>
             <button
-              onClick={() => scrollToSection('testimonials')}
-              className="relative text-foreground/80 hover:text-foreground transition-colors duration-300 group"
-            >
-              Testimonials
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-accent transition-all duration-300 group-hover:w-full"></span>
-            </button>
-            <button
               onClick={() => scrollToSection('contact')}
               className="relative text-foreground/80 hover:text-foreground transition-colors duration-300 group"
             >
@@ -103,12 +96,6 @@ const Header = () => {
                 className="text-left text-foreground/80 hover:text-foreground transition-colors duration-300 hover:translate-x-2 transform"
               >
                 Services
-              </button>
-              <button
-                onClick={() => scrollToSection('testimonials')}
-                className="text-left text-foreground/80 hover:text-foreground transition-colors duration-300 hover:translate-x-2 transform"
-              >
-                Testimonials
               </button>
               <button
                 onClick={() => scrollToSection('contact')}
