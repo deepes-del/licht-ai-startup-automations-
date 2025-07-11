@@ -20,8 +20,8 @@ const Contact = () => {
     setIsSubmitting(true);
     
     try {
-      // Create mailto link with Deepesh's email
-      const mailtoLink = `mailto:deepesh.manju2003@gmail.com?subject=Contact from ${formData.name}&body=Name: ${formData.name}%0D%0AEmail: ${formData.email}%0D%0A%0D%0AMessage:%0D%0A${formData.message}`;
+      // Create mailto link with the company email
+      const mailtoLink = `mailto:light.aiautomations@gmail.com?subject=Contact from ${formData.name}&body=Name: ${formData.name}%0D%0AEmail: ${formData.email}%0D%0A%0D%0AMessage:%0D%0A${formData.message}`;
       window.location.href = mailtoLink;
       
       toast({
@@ -33,7 +33,7 @@ const Contact = () => {
     } catch (error) {
       toast({
         title: "Oops! Something went wrong",
-        description: "Please try again or contact us directly at deepesh.manju2003@gmail.com",
+        description: "Please try again or contact us directly at light.aiautomations@gmail.com",
         variant: "destructive",
       });
     } finally {
@@ -136,7 +136,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-foreground transition-colors duration-300">Email Us</h4>
-                      <p className="text-muted-foreground transition-colors duration-300">deepesh.manju2003@gmail.com</p>
+                      <p className="text-muted-foreground transition-colors duration-300">light.aiautomations@gmail.com</p>
                     </div>
                   </div>
                 </CardContent>
@@ -158,7 +158,7 @@ const Contact = () => {
               </Card>
             </div>
 
-            {/* LinkedIn & Email Buttons */}
+            {/* LinkedIn Buttons */}
             <div className="pt-6 space-y-4">
               <Button
                 variant="outline"
@@ -176,15 +176,6 @@ const Contact = () => {
               >
                 <Linkedin className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
                 Deepesh - Connect on LinkedIn
-              </Button>
-
-              <Button
-                variant="outline"
-                className="w-full bg-transparent border-2 border-primary/20 text-foreground hover:bg-card hover:text-primary px-8 py-3 rounded-xl font-semibold transition-all duration-300 group"
-                onClick={() => window.location.href = 'mailto:deepesh.manju2003@gmail.com'}
-              >
-                <Mail className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
-                Deepesh - Direct Email
               </Button>
             </div>
           </div>
@@ -204,7 +195,7 @@ const Contact = () => {
               <span className="hidden sm:block">•</span>
               <span>🚀 Co-Creator – Deepesh</span>
               <span className="hidden sm:block">•</span>
-              <span>📧 deepesh.manju2003@gmail.com</span>
+              <span>📧 light.aiautomations@gmail.com</span>
               <span className="hidden sm:block">•</span>
               <span>🔗 LinkedIn</span>
             </div>
