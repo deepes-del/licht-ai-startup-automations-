@@ -20,8 +20,8 @@ const Contact = () => {
     setIsSubmitting(true);
     
     try {
-      // Create mailto link
-      const mailtoLink = `mailto:kiranashgowda007@gmail.com?subject=Contact from ${formData.name}&body=Name: ${formData.name}%0D%0AEmail: ${formData.email}%0D%0A%0D%0AMessage:%0D%0A${formData.message}`;
+      // Create mailto link with updated email
+      const mailtoLink = `mailto:light.aiautomations@gmail.com?subject=Contact from ${formData.name}&body=Name: ${formData.name}%0D%0AEmail: ${formData.email}%0D%0A%0D%0AMessage:%0D%0A${formData.message}`;
       window.location.href = mailtoLink;
       
       toast({
@@ -33,7 +33,7 @@ const Contact = () => {
     } catch (error) {
       toast({
         title: "Oops! Something went wrong",
-        description: "Please try again or contact me directly at kiranashgowda007@gmail.com",
+        description: "Please try again or contact us directly at light.aiautomations@gmail.com",
         variant: "destructive",
       });
     } finally {
@@ -122,7 +122,7 @@ const Contact = () => {
             <div>
               <h3 className="text-3xl font-bold mb-6 text-foreground transition-colors duration-300">Get in Touch</h3>
               <p className="text-muted-foreground leading-relaxed mb-8 transition-colors duration-300">
-                I'm here to help you leverage the power of AI automation. Whether you need a custom solution or want to learn more about our services, don't hesitate to reach out.
+                We're here to help you leverage the power of AI automation. Whether you need a custom solution or want to learn more about our services, don't hesitate to reach out.
               </p>
             </div>
 
@@ -135,8 +135,8 @@ const Contact = () => {
                       <Mail className="h-6 w-6 text-primary-foreground" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-foreground transition-colors duration-300">Email Me</h4>
-                      <p className="text-muted-foreground transition-colors duration-300">kiranashgowda007@gmail.com</p>
+                      <h4 className="font-semibold text-foreground transition-colors duration-300">Email Us</h4>
+                      <p className="text-muted-foreground transition-colors duration-300">light.aiautomations@gmail.com</p>
                     </div>
                   </div>
                 </CardContent>
@@ -149,15 +149,16 @@ const Contact = () => {
                       <User className="h-6 w-6 text-primary-foreground" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-foreground transition-colors duration-300">Creator</h4>
+                      <h4 className="font-semibold text-foreground transition-colors duration-300">Creators</h4>
                       <p className="text-muted-foreground transition-colors duration-300">🐐 Goat Creator – Kiran Gowda</p>
+                      <p className="text-muted-foreground transition-colors duration-300">🚀 Co-Creator – Deepesh</p>
                     </div>
                   </div>
                 </CardContent>
               </Card>
             </div>
 
-            {/* LinkedIn Buttons */}
+            {/* LinkedIn & Email Buttons */}
             <div className="pt-6 space-y-4">
               <Button
                 variant="outline"
@@ -176,6 +177,15 @@ const Contact = () => {
                 <Linkedin className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
                 Deepesh - Connect on LinkedIn
               </Button>
+
+              <Button
+                variant="outline"
+                className="w-full bg-transparent border-2 border-primary/20 text-foreground hover:bg-card hover:text-primary px-8 py-3 rounded-xl font-semibold transition-all duration-300 group"
+                onClick={() => window.location.href = 'mailto:deepesh.manju2003@gmail.com'}
+              >
+                <Mail className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
+                Deepesh - Direct Email
+              </Button>
             </div>
           </div>
         </div>
@@ -192,7 +202,9 @@ const Contact = () => {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm text-slate-400">
               <span>🐐 Goat Creator – Kiran Gowda</span>
               <span className="hidden sm:block">•</span>
-              <span>📧 kiranashgowda007@gmail.com</span>
+              <span>🚀 Co-Creator – Deepesh</span>
+              <span className="hidden sm:block">•</span>
+              <span>📧 light.aiautomations@gmail.com</span>
               <span className="hidden sm:block">•</span>
               <span>🔗 LinkedIn</span>
             </div>
