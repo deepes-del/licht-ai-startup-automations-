@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { TrendingUp, BarChart3, Users, Building2, Bot, MessageSquare, DollarSign, Activity } from 'lucide-react';
+import { TrendingUp, BarChart3, Users, Building2, Bot, MessageSquare, DollarSign, Activity, Workflow, ArrowRight } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import Chart from './Chart';
@@ -32,6 +32,30 @@ const Services = () => {
     { name: 'Retention', value: 85 }
   ];
 
+  const clientWorkflows = [
+    {
+      id: 1,
+      title: "Multi-Platform Data Processing",
+      description: "Complex automation workflow integrating multiple data sources with AI agents for intelligent processing and routing.",
+      image: "/lovable-uploads/86d80948-98ce-4ce9-a985-6d923f77b443.png",
+      tags: ["AI Agents", "Data Processing", "Multi-Platform", "Automation"]
+    },
+    {
+      id: 2,
+      title: "Smart Form Processing System",
+      description: "Automated form submission handling with AI-powered data extraction, validation, and intelligent routing to multiple endpoints.",
+      image: "/lovable-uploads/2bf2d0d7-f29e-4153-81bd-47049e510458.png",
+      tags: ["Form Processing", "AI Integration", "Data Validation", "Smart Routing"]
+    },
+    {
+      id: 3,
+      title: "Advanced Workflow Orchestration",
+      description: "Sophisticated workflow system with conditional logic, parallel processing, and intelligent decision-making capabilities.",
+      image: "/lovable-uploads/59cc99c3-bd7b-4e28-933f-3303179a56dd.png",
+      tags: ["Workflow Engine", "Conditional Logic", "Parallel Processing", "Decision Making"]
+    }
+  ];
+
   return (
     <section id="services" className="py-20 bg-gradient-to-b from-background to-primary/5">
       <div className="container mx-auto px-4">
@@ -42,6 +66,83 @@ const Services = () => {
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Explore our comprehensive suite of AI-powered automation tools designed to revolutionize your industry operations
           </p>
+        </div>
+
+        {/* Client Workflows Section */}
+        <div className="mb-20">
+          <div className="text-center mb-12">
+            <h3 className="text-3xl font-bold text-foreground mb-4">
+              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Client Success Stories</span>
+            </h3>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Real automation workflows we've built for our clients, showcasing the power and complexity of our AI solutions
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-3 gap-8">
+            {clientWorkflows.map((workflow, index) => (
+              <Card key={workflow.id} className="group hover:shadow-2xl transition-all duration-500 border-0 bg-card/80 backdrop-blur-sm overflow-hidden animate-fade-in" style={{animationDelay: `${index * 0.1}s`}}>
+                <div className="relative overflow-hidden">
+                  <img 
+                    src={workflow.image} 
+                    alt={workflow.title}
+                    className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                  <div className="absolute top-4 right-4">
+                    <div className="w-8 h-8 bg-primary/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+                      <Workflow className="w-4 h-4 text-primary" />
+                    </div>
+                  </div>
+                </div>
+                
+                <CardHeader className="pb-3">
+                  <CardTitle className="text-lg font-bold text-foreground group-hover:text-primary transition-colors duration-300">
+                    {workflow.title}
+                  </CardTitle>
+                  <CardDescription className="text-muted-foreground leading-relaxed">
+                    {workflow.description}
+                  </CardDescription>
+                </CardHeader>
+
+                <CardContent className="pt-0">
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {workflow.tags.map((tag, tagIndex) => (
+                      <span 
+                        key={tagIndex}
+                        className="px-2 py-1 text-xs bg-primary/10 text-primary rounded-full border border-primary/20"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  
+                  <div className="flex items-center justify-between text-sm text-muted-foreground">
+                    <span className="flex items-center">
+                      <Activity className="w-4 h-4 mr-1" />
+                      Live Workflow
+                    </span>
+                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <Card className="bg-gradient-to-r from-primary/5 to-accent/5 border-primary/20 max-w-2xl mx-auto">
+              <CardContent className="p-8">
+                <h4 className="text-xl font-bold text-foreground mb-3">Ready for Your Custom Solution?</h4>
+                <p className="text-muted-foreground mb-6">
+                  These are just examples of what we can build. Every business is unique, and we create custom automation workflows tailored to your specific needs.
+                </p>
+                <div className="flex items-center justify-center text-primary font-semibold">
+                  <MessageSquare className="w-5 h-5 mr-2" />
+                  Contact us to discuss your automation requirements
+                </div>
+              </CardContent>
+            </Card>
+          </div>
         </div>
 
         <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
