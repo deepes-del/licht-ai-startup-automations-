@@ -4,24 +4,11 @@ import { Button } from '@/components/ui/button';
 import { useState, useEffect } from 'react';
 
 const Hero = () => {
-  const [isDark, setIsDark] = useState(false);
-
   useEffect(() => {
-    // Check for system preference or saved preference
-    const savedTheme = localStorage.getItem('theme');
-    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const shouldBeDark = savedTheme === 'dark' || (!savedTheme && systemPrefersDark);
-    
-    setIsDark(shouldBeDark);
-    document.documentElement.classList.toggle('dark', shouldBeDark);
+    // Force dark mode only
+    document.documentElement.classList.add('dark');
+    localStorage.setItem('theme', 'dark');
   }, []);
-
-  const toggleDarkMode = () => {
-    const newIsDark = !isDark;
-    setIsDark(newIsDark);
-    document.documentElement.classList.toggle('dark', newIsDark);
-    localStorage.setItem('theme', newIsDark ? 'dark' : 'light');
-  };
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -32,19 +19,6 @@ const Hero = () => {
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-background transition-colors duration-500">
-      {/* Dark Mode Toggle */}
-      <Button
-        variant="outline"
-        size="icon"
-        className="fixed top-20 right-4 z-50 bg-background/80 backdrop-blur-md border-border/50 hover:bg-card transition-all duration-300"
-        onClick={toggleDarkMode}
-      >
-        {isDark ? (
-          <Sun className="h-5 w-5 text-foreground transition-transform duration-300 rotate-0 hover:rotate-90" />
-        ) : (
-          <Moon className="h-5 w-5 text-foreground transition-transform duration-300 rotate-0 hover:-rotate-12" />
-        )}
-      </Button>
 
       {/* Animated Background Elements */}
       <div className="absolute inset-0 bg-gradient-to-br from-background via-primary/5 to-accent/10 transition-colors duration-500"></div>
@@ -114,7 +88,7 @@ const Hero = () => {
             <div className="text-center group hover:animate-card-hover transition-all duration-300 bg-card/50 rounded-2xl p-6 border border-border/20">
               <div className="flex items-center justify-center space-x-2 mb-2">
                 <Brain className="w-8 h-8 text-primary transition-colors duration-300" />
-                <div className="text-3xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">50+</div>
+                <div className="text-3xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">60+</div>
               </div>
               <div className="text-sm text-muted-foreground transition-colors duration-300">Automations Built</div>
             </div>

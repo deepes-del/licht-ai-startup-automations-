@@ -149,9 +149,10 @@ const Contact = () => {
                       <User className="h-6 w-6 text-primary-foreground" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-foreground transition-colors duration-300">Creators</h4>
+                      <h4 className="font-semibold text-foreground transition-colors duration-300">Founders</h4>
                       <p className="text-muted-foreground transition-colors duration-300">🐐 Goat Creator – Kiran Gowda</p>
-                      <p className="text-muted-foreground transition-colors duration-300">🚀 Co-Creator – Deepesh</p>
+                      <p className="text-muted-foreground transition-colors duration-300">🚀 Founder – DEEPESH.H</p>
+                      <p className="text-xs text-muted-foreground transition-colors duration-300">deepesh.manju2003@gmail.com</p>
                     </div>
                   </div>
                 </CardContent>
@@ -190,14 +191,14 @@ const Contact = () => {
             <p className="text-slate-300 mb-6 text-lg">
               Automations at the speed of light
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm text-slate-400">
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm text-slate-400">
               <span>🐐 Goat Creator – Kiran Gowda</span>
               <span className="hidden sm:block">•</span>
-              <span>🚀 Co-Creator – Deepesh</span>
+              <span>🚀 Founder – DEEPESH.H</span>
               <span className="hidden sm:block">•</span>
               <span>📧 light.aiautomations@gmail.com</span>
               <span className="hidden sm:block">•</span>
-              <span>🔗 LinkedIn</span>
+              <span>📧 deepesh.manju2003@gmail.com</span>
             </div>
           </div>
         </div>
