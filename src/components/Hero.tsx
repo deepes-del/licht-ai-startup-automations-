@@ -102,7 +102,7 @@ const Hero = () => {
             <div className="text-center group hover:animate-card-hover transition-all duration-300 bg-card/50 rounded-2xl p-6 border border-border/20">
               <div className="flex items-center justify-center space-x-2 mb-2">
                 <TrendingUp className="w-8 h-8 text-primary transition-colors duration-300" />
-                <div className="text-3xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">25/7</div>
+                <div className="text-3xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">24/7</div>
               </div>
               <div className="text-sm text-muted-foreground transition-colors duration-300">Business Support</div>
             </div>
