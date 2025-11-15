@@ -1,4 +1,4 @@
-import { Bot, MessageSquare, Building2, TrendingUp, Workflow, DollarSign, ArrowRight, Share2, Mail, Headphones, Youtube, Calendar, User, Globe, Github } from 'lucide-react';
+import { Bot, MessageSquare, Building2, TrendingUp, Workflow, DollarSign, ArrowRight } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const Services = () => {
@@ -10,7 +10,7 @@ const Services = () => {
             AI Automation <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Solutions</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            Litchai provides end-to-end AI automation for marketing, customer engagement, and operations. We help businesses cut manual work by generating ads, managing social media, replying to customers, analyzing data, and more—automatically.
+            Looking to save time and boost efficiency? We design tailor-made automation solutions for your business
           </p>
         </div>
 
@@ -140,102 +140,6 @@ const Services = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground text-sm">Including Cash on Delivery-like solutions and custom payment terms</p>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-gradient-to-br from-primary/10 to-primary/5 border-primary/30 hover:shadow-xl transition-all duration-300">
-              <CardHeader>
-                <CardTitle className="flex items-center text-primary">
-                  <Share2 className="mr-2 h-5 w-5" />
-                  Multi-Platform Social Media
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground text-sm">Post ads simultaneously across all social media platforms with one click</p>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-gradient-to-br from-accent/10 to-accent/5 border-accent/30 hover:shadow-xl transition-all duration-300">
-              <CardHeader>
-                <CardTitle className="flex items-center text-accent">
-                  <Mail className="mr-2 h-5 w-5" />
-                  AI Email Automation
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground text-sm">Automated email replies with intelligent context understanding</p>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-gradient-to-br from-primary/10 to-primary/5 border-primary/30 hover:shadow-xl transition-all duration-300">
-              <CardHeader>
-                <CardTitle className="flex items-center text-primary">
-                  <Headphones className="mr-2 h-5 w-5" />
-                  Customer Support Agent
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground text-sm">24/7 AI-powered customer support with instant response capabilities</p>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-gradient-to-br from-accent/10 to-accent/5 border-accent/30 hover:shadow-xl transition-all duration-300">
-              <CardHeader>
-                <CardTitle className="flex items-center text-accent">
-                  <Youtube className="mr-2 h-5 w-5" />
-                  YouTube Thumbnail Generator
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground text-sm">Create eye-catching YouTube thumbnails with AI-powered design</p>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-gradient-to-br from-primary/10 to-primary/5 border-primary/30 hover:shadow-xl transition-all duration-300">
-              <CardHeader>
-                <CardTitle className="flex items-center text-primary">
-                  <Calendar className="mr-2 h-5 w-5" />
-                  AI Appointment Scheduling
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground text-sm">Smart appointment booking with automated reminders and rescheduling</p>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-gradient-to-br from-accent/10 to-accent/5 border-accent/30 hover:shadow-xl transition-all duration-300">
-              <CardHeader>
-                <CardTitle className="flex items-center text-accent">
-                  <User className="mr-2 h-5 w-5" />
-                  AI Influencer Management
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground text-sm">Automated influencer outreach, tracking, and campaign management</p>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-gradient-to-br from-primary/10 to-primary/5 border-primary/30 hover:shadow-xl transition-all duration-300">
-              <CardHeader>
-                <CardTitle className="flex items-center text-primary">
-                  <Globe className="mr-2 h-5 w-5" />
-                  Web Scraping & Content Extraction
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground text-sm">Automated data collection and content extraction from websites</p>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-gradient-to-br from-accent/10 to-accent/5 border-accent/30 hover:shadow-xl transition-all duration-300">
-              <CardHeader>
-                <CardTitle className="flex items-center text-accent">
-                  <Github className="mr-2 h-5 w-5" />
-                  GitHub API Scanner
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground text-sm">Automated repository analysis and API endpoint scanning</p>
               </CardContent>
             </Card>
           </div>
