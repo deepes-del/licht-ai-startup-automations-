@@ -69,17 +69,17 @@ const Services = () => {
             </CardContent>
           </Card>
 
-          {/* Premium Services */}
+          {/* Services Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             <Card className="bg-gradient-to-br from-primary/10 to-primary/5 border-primary/30 hover:shadow-xl transition-all duration-300">
               <CardHeader>
                 <CardTitle className="flex items-center text-primary">
                   <Bot className="mr-2 h-5 w-5" />
-                  AI Chatbots & Voice Agents
+                  AI Ads Images Generator
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground text-sm">Intelligent conversational AI for customer support and engagement</p>
+                <p className="text-muted-foreground text-sm">Automatically generate professional advertising images powered by AI</p>
               </CardContent>
             </Card>
 
@@ -87,35 +87,11 @@ const Services = () => {
               <CardHeader>
                 <CardTitle className="flex items-center text-accent">
                   <MessageSquare className="mr-2 h-5 w-5" />
-                  Virtual Receptionists
+                  3D Content Creation
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground text-sm">24/7 automated receptionist services with natural language processing</p>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-gradient-to-br from-primary/10 to-primary/5 border-primary/30 hover:shadow-xl transition-all duration-300">
-              <CardHeader>
-                <CardTitle className="flex items-center text-primary">
-                  <Building2 className="mr-2 h-5 w-5" />
-                  Smart Booking Systems
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground text-sm">Automated scheduling and booking management with smart notifications</p>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-gradient-to-br from-accent/10 to-accent/5 border-accent/30 hover:shadow-xl transition-all duration-300">
-              <CardHeader>
-                <CardTitle className="flex items-center text-accent">
-                  <TrendingUp className="mr-2 h-5 w-5" />
-                  Real Estate Automations
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground text-sm">Lead qualification, property matching, and client communication automation</p>
+                <p className="text-muted-foreground text-sm">Create stunning 3D visuals and animations for your projects</p>
               </CardContent>
             </Card>
 
@@ -123,11 +99,131 @@ const Services = () => {
               <CardHeader>
                 <CardTitle className="flex items-center text-primary">
                   <Workflow className="mr-2 h-5 w-5" />
-                  Custom Business Automations
+                  Multi-Platform Social Posting
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground text-sm">Tailor-made automation solutions built specifically for your workflow</p>
+                <p className="text-muted-foreground text-sm">Post ads simultaneously across all social media platforms with one click</p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-gradient-to-br from-accent/10 to-accent/5 border-accent/30 hover:shadow-xl transition-all duration-300">
+              <CardHeader>
+                <CardTitle className="flex items-center text-accent">
+                  <Bot className="mr-2 h-5 w-5" />
+                  Custom Business Chatbot
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground text-sm">Intelligent chatbots tailored to your business needs and workflow</p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-gradient-to-br from-primary/10 to-primary/5 border-primary/30 hover:shadow-xl transition-all duration-300">
+              <CardHeader>
+                <CardTitle className="flex items-center text-primary">
+                  <MessageSquare className="mr-2 h-5 w-5" />
+                  Email Auto-Reply
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground text-sm">Automated intelligent email responses to save time and improve efficiency</p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-gradient-to-br from-accent/10 to-accent/5 border-accent/30 hover:shadow-xl transition-all duration-300">
+              <CardHeader>
+                <CardTitle className="flex items-center text-accent">
+                  <Bot className="mr-2 h-5 w-5" />
+                  Customer Support Agent
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground text-sm">24/7 AI-powered customer support with natural language understanding</p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-gradient-to-br from-primary/10 to-primary/5 border-primary/30 hover:shadow-xl transition-all duration-300">
+              <CardHeader>
+                <CardTitle className="flex items-center text-primary">
+                  <MessageSquare className="mr-2 h-5 w-5" />
+                  Automated Blog Posts
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground text-sm">Generate and publish SEO-optimized blog content automatically</p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-gradient-to-br from-accent/10 to-accent/5 border-accent/30 hover:shadow-xl transition-all duration-300">
+              <CardHeader>
+                <CardTitle className="flex items-center text-accent">
+                  <TrendingUp className="mr-2 h-5 w-5" />
+                  YouTube Thumbnail Generator
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground text-sm">Create eye-catching YouTube thumbnails that drive clicks</p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-gradient-to-br from-primary/10 to-primary/5 border-primary/30 hover:shadow-xl transition-all duration-300">
+              <CardHeader>
+                <CardTitle className="flex items-center text-primary">
+                  <Building2 className="mr-2 h-5 w-5" />
+                  AI Appointment Scheduling
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground text-sm">Smart appointment booking with automated reminders and calendar integration</p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-gradient-to-br from-accent/10 to-accent/5 border-accent/30 hover:shadow-xl transition-all duration-300">
+              <CardHeader>
+                <CardTitle className="flex items-center text-accent">
+                  <Bot className="mr-2 h-5 w-5" />
+                  AI Influencer Creation
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground text-sm">Generate virtual AI influencers for your brand and marketing campaigns</p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-gradient-to-br from-primary/10 to-primary/5 border-primary/30 hover:shadow-xl transition-all duration-300">
+              <CardHeader>
+                <CardTitle className="flex items-center text-primary">
+                  <Workflow className="mr-2 h-5 w-5" />
+                  Logo Animations
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground text-sm">Bring your logo to life with professional animated effects</p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-gradient-to-br from-accent/10 to-accent/5 border-accent/30 hover:shadow-xl transition-all duration-300">
+              <CardHeader>
+                <CardTitle className="flex items-center text-accent">
+                  <TrendingUp className="mr-2 h-5 w-5" />
+                  Resume Job Matching
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground text-sm">AI-powered job matching based on resume analysis and skills</p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-gradient-to-br from-primary/10 to-primary/5 border-primary/30 hover:shadow-xl transition-all duration-300">
+              <CardHeader>
+                <CardTitle className="flex items-center text-primary">
+                  <Workflow className="mr-2 h-5 w-5" />
+                  Automated EDA
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground text-sm">Exploratory Data Analysis automation for insights and visualization</p>
               </CardContent>
             </Card>
 
@@ -135,11 +231,11 @@ const Services = () => {
               <CardHeader>
                 <CardTitle className="flex items-center text-accent">
                   <DollarSign className="mr-2 h-5 w-5" />
-                  Flexible Payment Options
+                  GitHub API Scanner
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground text-sm">Including Cash on Delivery-like solutions and custom payment terms</p>
+                <p className="text-muted-foreground text-sm">Automated API scanning and security analysis for GitHub repositories</p>
               </CardContent>
             </Card>
           </div>
