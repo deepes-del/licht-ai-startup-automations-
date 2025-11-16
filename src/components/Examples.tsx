@@ -8,17 +8,26 @@ const Examples = () => {
     {
       image: exampleUgc1,
       title: "AI UGC Content Creation",
-      description: "Transform simple product shots into professional UGC content with AI-enhanced visuals"
+      description: "Transform simple product shots into professional UGC content with AI-enhanced visuals",
+      type: "image"
     },
     {
       image: exampleUgc2,
       title: "Product Visualization",
-      description: "Generate multiple product variations and lifestyle mockups instantly"
+      description: "Generate multiple product variations and lifestyle mockups instantly",
+      type: "image"
     },
     {
       image: exampleUgc3,
       title: "Enhanced Marketing Assets",
-      description: "Elevate your product photography with AI-powered enhancements and styling"
+      description: "Elevate your product photography with AI-powered enhancements and styling",
+      type: "image"
+    },
+    {
+      video: "/ugc_image_ads.mp4",
+      title: "Client Success Story",
+      description: "See real results from our AI automation services transforming content creation",
+      type: "video"
     }
   ];
 
@@ -46,11 +55,22 @@ const Examples = () => {
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <div className="aspect-[4/3] overflow-hidden">
-                <img
-                  src={example.image}
-                  alt={example.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
+                {example.type === "video" ? (
+                  <video
+                    src={example.video}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-full h-full object-cover"
+                  />
+                ) : (
+                  <img
+                    src={example.image}
+                    alt={example.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                )}
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2 text-foreground">
