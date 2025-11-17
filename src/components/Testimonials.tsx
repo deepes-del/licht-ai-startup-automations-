@@ -38,7 +38,7 @@ const Testimonials = () => {
               </p>
               <div className="flex items-center space-x-4">
                 <div>
-                  <p className="font-semibold text-foreground">Michael Chen</p>
+                  <p className="font-semibold text-foreground">Suresh Bharati</p>
                   <p className="text-sm text-muted-foreground">Founder, RealEstate Pro</p>
                 </div>
               </div>
