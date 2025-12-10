@@ -119,4 +119,13 @@ All colors MUST be HSL.
   .glow-text {
     text-shadow: 0 0 20px hsl(var(--primary) / 0.5);
   }
+
+  @keyframes gradient {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+
+  .animate-gradient {
+    animation: gradient 3s ease infinite;
+  }
 }

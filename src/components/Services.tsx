@@ -40,11 +40,6 @@ const Services = () => {
                         <p className="text-sm text-muted-foreground">Intelligent call routing & response systems</p>
                       </div>
                     </div>
-                    
-                    <div className="bg-card/60 rounded-lg p-4 border border-border/20">
-                      <h4 className="font-semibold text-primary mb-2">Lead Capture → CRM</h4>
-                      <p className="text-sm text-muted-foreground">Seamless lead management and nurturing</p>
-                    </div>
                   </div>
                 </div>
 
