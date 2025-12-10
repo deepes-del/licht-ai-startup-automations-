@@ -33,19 +33,34 @@ const Hero = () => {
 
       <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="text-center space-y-10 animate-fade-in">
-          {/* Service Type Badges */}
-          <div className="flex items-center justify-center gap-3 flex-wrap">
-            <span className="px-5 py-2 bg-primary/10 border border-primary/30 rounded-full text-primary font-medium text-sm backdrop-blur-sm hover:bg-primary/20 transition-colors cursor-default">
-              B2B
-            </span>
-            <span className="text-muted-foreground/50">•</span>
-            <span className="px-5 py-2 bg-accent/10 border border-accent/30 rounded-full text-accent font-medium text-sm backdrop-blur-sm hover:bg-accent/20 transition-colors cursor-default">
-              Personal
-            </span>
-            <span className="text-muted-foreground/50">•</span>
-            <span className="px-5 py-2 bg-primary/10 border border-primary/30 rounded-full text-primary font-medium text-sm backdrop-blur-sm hover:bg-primary/20 transition-colors cursor-default">
-              Custom Automation
-            </span>
+          {/* Service Type Badges with Particles */}
+          <div className="relative">
+            {/* Animated Particles */}
+            <div className="absolute inset-0 -inset-x-20 -inset-y-10 overflow-hidden pointer-events-none">
+              <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-primary/40 rounded-full animate-float-1"></div>
+              <div className="absolute top-1/3 right-1/4 w-1.5 h-1.5 bg-accent/50 rounded-full animate-float-2"></div>
+              <div className="absolute bottom-1/4 left-1/3 w-1 h-1 bg-primary/30 rounded-full animate-float-3"></div>
+              <div className="absolute top-1/2 right-1/3 w-2.5 h-2.5 bg-accent/30 rounded-full animate-float-1"></div>
+              <div className="absolute bottom-1/3 right-1/5 w-1.5 h-1.5 bg-primary/40 rounded-full animate-float-2"></div>
+              <div className="absolute top-2/3 left-1/5 w-1 h-1 bg-accent/40 rounded-full animate-float-3"></div>
+              <div className="absolute top-1/4 left-1/2 w-2 h-2 bg-primary/20 rounded-full animate-float-2"></div>
+              <div className="absolute bottom-1/2 right-1/4 w-1.5 h-1.5 bg-accent/35 rounded-full animate-float-1"></div>
+            </div>
+            
+            {/* Badges */}
+            <div className="flex items-center justify-center gap-3 flex-wrap relative z-10">
+              <span className="px-5 py-2 bg-primary/10 border border-primary/30 rounded-full text-primary font-medium text-sm backdrop-blur-sm hover:bg-primary/20 transition-colors cursor-default">
+                B2B
+              </span>
+              <span className="text-muted-foreground/50">•</span>
+              <span className="px-5 py-2 bg-accent/10 border border-accent/30 rounded-full text-accent font-medium text-sm backdrop-blur-sm hover:bg-accent/20 transition-colors cursor-default">
+                Personal
+              </span>
+              <span className="text-muted-foreground/50">•</span>
+              <span className="px-5 py-2 bg-primary/10 border border-primary/30 rounded-full text-primary font-medium text-sm backdrop-blur-sm hover:bg-primary/20 transition-colors cursor-default">
+                Custom Automation
+              </span>
+            </div>
           </div>
 
           {/* Main Tagline */}
