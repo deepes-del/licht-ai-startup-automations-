@@ -33,25 +33,19 @@ const Hero = () => {
 
       <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="text-center space-y-10 animate-fade-in">
-          {/* Logo and Company Name */}
-          <div className="flex items-center justify-center space-x-4 mb-6">
-            <div className="relative">
-              <div className="absolute inset-0 bg-primary/30 rounded-full blur-xl animate-pulse"></div>
-              <img 
-                src="/lovable-uploads/e5c4ceca-75b5-44af-bfc5-c1053552ed08.png" 
-                alt="Licht AI Logo" 
-                className="w-24 h-24 object-contain relative z-10"
-              />
-            </div>
-            <div className="text-left">
-              <h1 className="text-5xl lg:text-7xl font-bold text-foreground tracking-tight">
-                Licht AI
-              </h1>
-              <div className="flex items-center space-x-2 mt-2">
-                <Sparkles className="w-5 h-5 text-accent animate-pulse" />
-                <span className="text-lg text-muted-foreground font-medium">AI Automation Agency</span>
-              </div>
-            </div>
+          {/* Service Type Badges */}
+          <div className="flex items-center justify-center gap-3 flex-wrap">
+            <span className="px-5 py-2 bg-primary/10 border border-primary/30 rounded-full text-primary font-medium text-sm backdrop-blur-sm hover:bg-primary/20 transition-colors cursor-default">
+              B2B
+            </span>
+            <span className="text-muted-foreground/50">•</span>
+            <span className="px-5 py-2 bg-accent/10 border border-accent/30 rounded-full text-accent font-medium text-sm backdrop-blur-sm hover:bg-accent/20 transition-colors cursor-default">
+              Personal
+            </span>
+            <span className="text-muted-foreground/50">•</span>
+            <span className="px-5 py-2 bg-primary/10 border border-primary/30 rounded-full text-primary font-medium text-sm backdrop-blur-sm hover:bg-primary/20 transition-colors cursor-default">
+              Custom Automation
+            </span>
           </div>
 
           {/* Main Tagline */}
